@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO HUB</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: url('modification2.jpg') center center fixed;
+            background-size: cover;
+            background-color: white; 
+            overflow-x: hidden;
+            background-image: url('C:/Users/Mohan Kumar/Downloads/wp1861758-4k-car-wallpaper.jpg');
+        }
+
+        .account-container:hover .account-options {
+            display: flex;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: linear-gradient(to bottom, #222, #000);
+            padding: 15px;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .account-container:hover .account-options a {
+            display: block;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .account-container:hover .account-options a:hover {
+            background-color: #222;
+        }
+
+        .account-options {
+            font-family: 'Arial', sans-serif;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #333;
+            padding: 15px;
+            display: none;
+            flex-direction: column;
+            text-decoration: none;
+            z-index: 1;
+        }
+
+        .account-logo {
+            max-height: 60px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .account-page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .account-page {
+            text-align: center;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 300px; 
+            border: 2px solid #fff; 
+        }
+
+        .account-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .account-form label {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .account-form input {
+            padding: 8px;
+            margin-bottom: 20px;
+            width: 80%;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .account-form button {
+            padding: 10px 20px;
+            background-color: #b84545;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-link {
+            cursor: pointer;
+            color: #b84545;
+            margin-top: 10px;
+        }
+        .account-page h2{
+           color: var(--color-primary);
+        }
+        .btn{
+    display:inline-block;
+    width:fit-content;
+    padding: 12px 28px;
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: var( --color-white);
+    letter-spacing: .4px;
+    font-weight: 600;
+    transition: .4s ease;
+}       
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container nav-container1">
+            <a href="#" class="logo">
+                <h3>AutoHub: Ultimate Destination for Premium Cars</h3>
+            </a>
+            <ul class="nav-link1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="social-link1">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li class="login-button"><a href="login.html"><img src="login.jpg" alt="Login" height="40px"></a></li>
+            </ul>
+        </div>
+        </header>
+        <body>
+            <div class="account-page-container">
+                <div class="account-page">
+                    <h2>Test Drive Request Form</h2>
+                    <div class="account-form" id="loginForm">
+                        <label for="loginUsername" style="color: black;">Email:</label>
+                        <input type="text" id="loginUsername" name="loginUsername" required>
+        
+                        <label for="loginPassword" style="color: #000;">Contact no:</label>
+                        <input type="number" id="loginPassword" name="loginPassword" required>
+                        <label for="date" style="color: black;">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                
+                        
+            
+                        <label for="time" style="color: black;">Preferred Time:</label>
+                        <input type="time" id="time" name="time" required>
+            
+                
+                        <label for="comments" style="color: black;">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+
+                        <a href="thankyou.html" class="btn">Book &#8594;</a>
+                    </div>
+        
+            </div>
+</body>
+</html>
